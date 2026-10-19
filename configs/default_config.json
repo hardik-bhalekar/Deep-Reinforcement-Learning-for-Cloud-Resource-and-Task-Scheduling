@@ -1,0 +1,62 @@
+{
+  "simulation": {
+    "num_vms": 4,
+    "num_tasks": 50,
+    "workload_type": "heterogeneous",
+    "seed": 42,
+    "arrival_rate": 1.5,
+    "task_length_min": 1000,
+    "task_length_max": 10000,
+    "task_ram_min": 512,
+    "task_ram_max": 4096,
+    "deadline_slack_factor": 1.5
+  },
+  "vm_profiles": [
+    {
+      "mips": 1000,
+      "ram_mb": 4096,
+      "idle_power_w": 80.0,
+      "max_power_w": 200.0,
+      "cost_per_hour": 0.05
+    },
+    {
+      "mips": 2000,
+      "ram_mb": 8192,
+      "idle_power_w": 110.0,
+      "max_power_w": 250.0,
+      "cost_per_hour": 0.10
+    },
+    {
+      "mips": 3000,
+      "ram_mb": 8192,
+      "idle_power_w": 140.0,
+      "max_power_w": 300.0,
+      "cost_per_hour": 0.15
+    },
+    {
+      "mips": 4000,
+      "ram_mb": 16384,
+      "idle_power_w": 180.0,
+      "max_power_w": 400.0,
+      "cost_per_hour": 0.25
+    }
+  ],
+  "dqn": {
+    "learning_rate": 0.001,
+    "gamma": 0.99,
+    "epsilon_start": 1.0,
+    "epsilon_end": 0.05,
+    "epsilon_decay": 0.995,
+    "buffer_capacity": 10000,
+    "batch_size": 64,
+    "target_update_freq": 10,
+    "hidden_dim": 128,
+    "num_episodes": 200
+  },
+  "reward_weights": {
+    "w_makespan": 0.4,
+    "w_energy": 0.3,
+    "w_sla": 0.2,
+    "w_cost": 0.1
+  }
+}

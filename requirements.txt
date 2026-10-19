@@ -1,0 +1,14 @@
+# Core Scientific & Data Libraries
+numpy>=1.24.0
+scipy>=1.10.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+
+# Deep Reinforcement Learning
+torch>=2.0.0
+
+# Interactive Dashboard & Visualization
+streamlit>=1.30.0
+
+# Testing & Code Quality
+pytest>=7.0.0
