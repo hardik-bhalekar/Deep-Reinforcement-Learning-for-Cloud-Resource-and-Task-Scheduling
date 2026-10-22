@@ -2,11 +2,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 .pytest_cache/
-*.pt
-*.pth
-checkpoints/
-results/
 .env
 .venv
 env/
 venv/
+checkpoints/final_dqn_model.pt

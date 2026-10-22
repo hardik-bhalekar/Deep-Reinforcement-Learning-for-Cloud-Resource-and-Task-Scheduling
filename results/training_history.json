@@ -1,0 +1,233 @@
+[
+  {
+    "episode": 1,
+    "train_reward": -18.22,
+    "loss": 0.0,
+    "epsilon": 0.995
+  },
+  {
+    "episode": 2,
+    "train_reward": -15.077,
+    "loss": 0.37922,
+    "epsilon": 0.99
+  },
+  {
+    "episode": 3,
+    "train_reward": -17.775,
+    "loss": 0.04124,
+    "epsilon": 0.9851
+  },
+  {
+    "episode": 4,
+    "train_reward": -15.872,
+    "loss": 0.02133,
+    "epsilon": 0.9801
+  },
+  {
+    "episode": 5,
+    "train_reward": -15.792,
+    "loss": 0.01611,
+    "epsilon": 0.9752
+  },
+  {
+    "episode": 6,
+    "train_reward": -10.264,
+    "loss": 0.01494,
+    "epsilon": 0.9704
+  },
+  {
+    "episode": 7,
+    "train_reward": -13.808,
+    "loss": 0.01326,
+    "epsilon": 0.9655
+  },
+  {
+    "episode": 8,
+    "train_reward": -15.332,
+    "loss": 0.01343,
+    "epsilon": 0.9607
+  },
+  {
+    "episode": 9,
+    "train_reward": -12.681,
+    "loss": 0.01365,
+    "epsilon": 0.9559
+  },
+  {
+    "episode": 10,
+    "train_reward": -18.119,
+    "loss": 0.0132,
+    "epsilon": 0.9511,
+    "eval": {
+      "scheduler_name": "DQN-Eval",
+      "num_tasks": 50,
+      "num_vms": 4,
+      "makespan": 55.172,
+      "avg_turnaround_time": 2.039,
+      "avg_waiting_time": 0.892,
+      "total_energy_joules": 38011.2,
+      "total_energy_kwh": 0.010559,
+      "avg_vm_utilization": 0.2599,
+      "sla_violation_rate": 0.26,
+      "sla_violations_count": 13,
+      "total_cost": 0.0084,
+      "degree_of_imbalance": 2.6286,
+      "task_completion_rate": 1.0,
+      "eval_reward": -5.986
+    }
+  },
+  {
+    "episode": 11,
+    "train_reward": -14.013,
+    "loss": 0.01322,
+    "epsilon": 0.9464
+  },
+  {
+    "episode": 12,
+    "train_reward": -13.184,
+    "loss": 0.01722,
+    "epsilon": 0.9416
+  },
+  {
+    "episode": 13,
+    "train_reward": -11.122,
+    "loss": 0.01678,
+    "epsilon": 0.9369
+  },
+  {
+    "episode": 14,
+    "train_reward": -14.858,
+    "loss": 0.01508,
+    "epsilon": 0.9322
+  },
+  {
+    "episode": 15,
+    "train_reward": -13.98,
+    "loss": 0.01891,
+    "epsilon": 0.9276
+  },
+  {
+    "episode": 16,
+    "train_reward": -15.149,
+    "loss": 0.01609,
+    "epsilon": 0.9229
+  },
+  {
+    "episode": 17,
+    "train_reward": -24.3,
+    "loss": 0.0164,
+    "epsilon": 0.9183
+  },
+  {
+    "episode": 18,
+    "train_reward": -10.576,
+    "loss": 0.01911,
+    "epsilon": 0.9137
+  },
+  {
+    "episode": 19,
+    "train_reward": -20.689,
+    "loss": 0.01906,
+    "epsilon": 0.9092
+  },
+  {
+    "episode": 20,
+    "train_reward": -15.876,
+    "loss": 0.01531,
+    "epsilon": 0.9046,
+    "eval": {
+      "scheduler_name": "DQN-Eval",
+      "num_tasks": 50,
+      "num_vms": 4,
+      "makespan": 53.827,
+      "avg_turnaround_time": 1.383,
+      "avg_waiting_time": 0.394,
+      "total_energy_joules": 37310.51,
+      "total_energy_kwh": 0.010364,
+      "avg_vm_utilization": 0.2297,
+      "sla_violation_rate": 0.08,
+      "sla_violations_count": 4,
+      "total_cost": 0.0082,
+      "degree_of_imbalance": 2.6695,
+      "task_completion_rate": 1.0,
+      "eval_reward": -1.97
+    }
+  },
+  {
+    "episode": 21,
+    "train_reward": -14.044,
+    "loss": 0.01525,
+    "epsilon": 0.9001
+  },
+  {
+    "episode": 22,
+    "train_reward": -12.079,
+    "loss": 0.01696,
+    "epsilon": 0.8956
+  },
+  {
+    "episode": 23,
+    "train_reward": -6.942,
+    "loss": 0.01294,
+    "epsilon": 0.8911
+  },
+  {
+    "episode": 24,
+    "train_reward": -16.335,
+    "loss": 0.0198,
+    "epsilon": 0.8867
+  },
+  {
+    "episode": 25,
+    "train_reward": -20.452,
+    "loss": 0.01481,
+    "epsilon": 0.8822
+  },
+  {
+    "episode": 26,
+    "train_reward": -17.293,
+    "loss": 0.02305,
+    "epsilon": 0.8778
+  },
+  {
+    "episode": 27,
+    "train_reward": -12.129,
+    "loss": 0.01653,
+    "epsilon": 0.8734
+  },
+  {
+    "episode": 28,
+    "train_reward": -16.261,
+    "loss": 0.01889,
+    "epsilon": 0.8691
+  },
+  {
+    "episode": 29,
+    "train_reward": -19.181,
+    "loss": 0.01746,
+    "epsilon": 0.8647
+  },
+  {
+    "episode": 30,
+    "train_reward": -11.143,
+    "loss": 0.01433,
+    "epsilon": 0.8604,
+    "eval": {
+      "scheduler_name": "DQN-Eval",
+      "num_tasks": 50,
+      "num_vms": 4,
+      "makespan": 53.827,
+      "avg_turnaround_time": 1.367,
+      "avg_waiting_time": 0.389,
+      "total_energy_joules": 37362.4,
+      "total_energy_kwh": 0.010378,
+      "avg_vm_utilization": 0.2269,
+      "sla_violation_rate": 0.06,
+      "sla_violations_count": 3,
+      "total_cost": 0.0082,
+      "degree_of_imbalance": 2.9326,
+      "task_completion_rate": 1.0,
+      "eval_reward": -1.647
+    }
+  }
+]
