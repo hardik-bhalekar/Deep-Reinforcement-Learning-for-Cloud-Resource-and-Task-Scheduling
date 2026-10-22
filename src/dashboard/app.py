@@ -2,10 +2,17 @@
 
 import json
 import os
+import sys
+from pathlib import Path
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import streamlit as st
+
+# Automatically ensure project root is in sys.path regardless of execution directory
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.simulator.environment import CloudSchedulingEnv
 from src.simulator.workload import WorkloadGenerator
@@ -34,7 +41,7 @@ st.markdown(
 
 @st.cache_resource
 def get_environment():
-    config_path = "configs/default_config.json"
+    config_path = str(PROJECT_ROOT / "configs" / "default_config.json")
     if os.path.exists(config_path):
         with open(config_path, "r") as f:
             cfg = json.load(f)
@@ -45,10 +52,11 @@ def get_environment():
 
 @st.cache_resource
 def load_dqn_agent(model_path: str, state_dim: int, action_dim: int):
-    if not os.path.exists(model_path):
+    resolved_path = model_path if os.path.isabs(model_path) else str(PROJECT_ROOT / model_path)
+    if not os.path.exists(resolved_path):
         return None
     agent = DQNAgent(state_dim=state_dim, action_dim=action_dim, hidden_dim=128)
-    agent.load_checkpoint(model_path)
+    agent.load_checkpoint(resolved_path)
     return agent
 
 
@@ -237,7 +245,7 @@ with tab2:
 with tab3:
     st.subheader("Deep Reinforcement Learning Architecture & Training Progression")
 
-    history_path = "results/training_history.json"
+    history_path = str(PROJECT_ROOT / "results" / "training_history.json")
     if os.path.exists(history_path):
         with open(history_path, "r") as f:
             history = json.load(f)
